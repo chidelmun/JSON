@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
 <body>
 
 
-<h2>JSON Object Creation in JavaScript</h2>
-
-<div id="profile" >
-	<h2>
-		Name :<strong id="name"></strong>
-	</h2>
-	<h2>
-		Street :<strong id="street"></strong>
-	</h2>
-	<h2>
-		Phone :<strong id="phone"></strong>
-	</h2>
-
+<div class="container">
+  <div class="jumbotron">
+    <h1>JSON- Data Exchange format.</h1>
+    <p>Resize this responsive page to see the effect!</p> 
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3 id="name">Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3 id="street">Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3 id="phone">Column 3</h3> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
 </div>
+
 
 <script>
 var text = '{"name":"John Johnson","street":"Oslo West 16","phone":"555 1234567"}';
@@ -28,7 +47,24 @@ document.getElementById("name").innerHTML =
 obj.name + "<br>" ;
 document.getElementById("street").innerHTML = obj.street + "<br>";
 document.getElementById("phone").innerHTML = obj.phone;
+
 </script>
+<!-- 
+<div id="user">
+	<h2>
+		Name :<strong id="username"></strong>
+	</h2>
+	<h2>
+		Street :<strong id="city"></strong>
+	</h2>
+	<h2>
+		Phone :<strong id="num"></strong>
+	</h2>
+	<h2>
+		Phone :<strong id="em"></strong>
+	</h2>
+
+</div> -->
 
 </body>
 </html>
